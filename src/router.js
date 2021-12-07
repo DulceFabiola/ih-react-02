@@ -44,7 +44,7 @@ const Router = () => {
               path="/characters"
               element={<Characters allCharacters={data} />}
             >
-              <Route path=":id" element={<Character />} />
+              <Route path=":id" element={<Character allCharacters={data} />} />
             </Route>
             {/* ruta con segmentos dinamicos */}
             <Route path="*" element={<h1>404</h1>} />
